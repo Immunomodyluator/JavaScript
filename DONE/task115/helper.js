@@ -1,0 +1,1 @@
+export const objects = [{dog:'Idai'}, {age:12},{count:2}];

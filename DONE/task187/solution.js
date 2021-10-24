@@ -12,7 +12,7 @@ const cat = {
     age: '2',
 }
 const dog = {
-    name: 'Rex',
+    name: 'Taks',
     age: '2',
     isHappy: true,
 }

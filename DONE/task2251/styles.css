@@ -1,3 +1,97 @@
+@media all and (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .content h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .content h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .banner-section {
+        padding-bottom: 40px;
+    }
+    .banner-section .row {
+        grid-template-columns: auto;
+    }
+    .description-section .row {
+        grid-template-columns: auto;
+    }
+    .column-offset {
+        margin-left: 0;
+    }
+    .description-section:nth-child(3) .row .column:first-child {
+        order: 2;
+    }
+    .banner-section .apps-buttons {
+        justify-content: flex-start;
+    }
+    .banner-section .apps-buttons a:first-child {
+        margin-left: 0;
+    }
+    .section-image img {
+        margin: 0 auto;
+        display: block;
+    }
+    .comments-section .columns-view {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .content h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .container {
+        max-width: 90vw;
+    }
+    .apps-buttons {
+        flex-direction: column;
+    }
+    .apps-buttons a {
+        margin-left: 0;
+    }
+    .join-section .apps-buttons a {
+        margin: 0 auto;
+    }
+    .columns-view {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-image img {
+        max-width: 80vw;
+    }
+    .description-section .content {
+        padding-top: 0;
+    }
+    .header-btn {
+        display: none;
+    }
+    .comments-section .columns-view {
+        grid-template-columns: auto;
+    }
+}
+
 @font-face {
     font-family: Jost;
     font-style: normal;
@@ -201,4 +295,38 @@ ul.main-menu {
     line-height: 28px;
     letter-spacing: -0.3px;
     color: #1F1F1F
+}
+
+.join-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.apps-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform.large {
+    height: 70px;
+    padding-top: 0px;
+    padding-bottom: 24px;
+}
+
+.apps-buttons a {
+    margin: 0 24px;
+}
+
+.platform.small {
+    height: 50px;
+}
+
+footer {
+    padding: 30px 0px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
 }

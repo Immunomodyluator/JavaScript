@@ -4,6 +4,6 @@
 
 import { hasUpperCaseLetters } from './helper.js';
 
-const s = 'Bingo!';
+const s = 'Üingo!';
 
 console.log(hasUpperCaseLetters(s));

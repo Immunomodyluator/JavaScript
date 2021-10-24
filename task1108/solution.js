@@ -5,5 +5,6 @@ Hello, world 👋!
 
 Let's make our Console Output Fun and Interactive in JavaScript and Node.js 🚀
 `;
-
-writeLog(message);
+var randomized = true;
+var delay;
+writeLog(message, randomized, delay);

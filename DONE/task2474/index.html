@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hi</title>
+</head>
+
+<body></body>
+<script>
+    var nameInput = prompt("What is your name?");
+    var age = Number(prompt("How old are you?"))
+    var onlyLaters = /^[a-zа-яА-ЯЁё-і]+$/i.test(nameInput);
+    var onlyNum = /^[0-9]+$/.test(age);
+    var element = document.createElement("p");
+    console.log(onlyLaters);
+    if (age === 0 || !onlyLaters || !onlyNum) {
+        element.innerHTML = "Invalid data";
+        document.body.append(element);
+    }
+    if (age !== 0 && onlyNum && onlyLaters) {
+        element.innerHTML = `Hi, ${nameInput}! I am ${age} years old too.`;
+        document.body.append(element);
+    }
+</script>
+
+</html>
